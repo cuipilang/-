@@ -26,6 +26,7 @@ jobs:
           elif [ -d build ]; then echo "PUBLISH_DIR=build" >> "$GITHUB_ENV";
           elif [ -d public ]; then echo "PUBLISH_DIR=public" >> "$GITHUB_ENV";
           else echo "PUBLISH_DIR=." >> "$GITHUB_ENV";
+          fi
         shell: bash
 
       - name: Deploy to gh-pages
